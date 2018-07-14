@@ -1,0 +1,43 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def get_data(file):
+    """
+    :param file: file location/name
+    :return df: dataframe of file
+    """
+    df = pd.read_csv(file, iterator=True, chunksize=100)
+    df1 = pd.concat(df, ignore_index=True)
+    return df
+
+def hexBinning(df, x, y, ext):
+    """
+    :param df: dataframe with target data
+    :param x: name of x feature
+    :param y: name of y feature
+    :param ext: [xmin, xmax, ymin, ymax] from a list for hexbinning, similar to setting axes
+    :return: generates a plot
+    """
+    #Build Hexbin
+    plt.hexbin(df[x], df[y], gridsize=(15, 12), extent=((ext[0], ext[1], ext[2], ext[3])))
+    # Title, Axes
+    plt.title('Hex Plot')
+    plt.xlabel(str(x))
+    plt.ylabel(str(y))
+    # Add color bar 
+    plt.colorbar()
+    # Display 
+    plt.show()
+
+if __name__ == '__main__':
+    #pass file location/name
+    file1 = input("File")
+    df = get_data((file1))
+    x_col = input("X Column Name") 
+    y_col = input("Y Column Name")
+    x_min = input("X Min")
+    x_max = input("X Max")
+    y_min = input("Y Min")
+    y_max = input("X Max")
+    axes = [x_min, x_max, y_min, y_max]
+    hexBinning(df,x_col, y_col, axes)
