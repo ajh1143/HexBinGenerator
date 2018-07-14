@@ -19,7 +19,8 @@ def hexBinning(df, x, y, ext):
     :return: generates a plot
     """
     #Build Hexbin
-    plt.hexbin(df[x], df[y], gridsize=(15, 12), extent=((ext[0], ext[1], ext[2], ext[3])))
+    # Define your gridsize(x,y) for each plot and add to parameters in plt.hexbin()
+    plt.hexbin(df[x], df[y], cmap='inferno', extent=((ext[0], ext[1], ext[2], ext[3])))
     # Title, Axes
     plt.title('Hex Plot')
     plt.xlabel(str(x))
