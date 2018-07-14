@@ -2,7 +2,7 @@
 Generates a HexBin plot with Inferno color styling, simply define the source file, x and y attributes, gridsize, and extents
 
 ## Example Output
-<img src="https://github.com/ajh1143/HexBinGenerator/blob/master/images/InfernoPlot.png" class="inline"/><br>
+<img src="https://github.com/ajh1143/HexBinGenerator/blob/master/InfernoPlot.png" class="inline"/><br>
 
 ## Imports
 
