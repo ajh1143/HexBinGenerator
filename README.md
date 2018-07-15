@@ -80,7 +80,7 @@ def hexBinning(df, x, y):
 ```
 
 ## Output Of Default Parameters
-<img src="/Images/Hex/BasicHex.png" class="inline"/><br>
+<img src="https://github.com/ajh1143/ajh1143.github.io/tree/master/Images/Hex/BasicHex.png" class="inline"/><br>
 
 # Getting Specific
 
