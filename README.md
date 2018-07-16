@@ -1,9 +1,6 @@
 # HexBinGenerator
 Generates a HexBin plot with Inferno color styling, simply define the source file, x and y attributes, gridsize, and extents
 
-# HexBinGenerator
-Today, we're going to develop a small program to generate a handy HexBin plot that will allow us to simply define the source file, our desired x and y attributes, gridsize, and extents.
-
 # What is a Hex Bin?
 A `Hex Bin` is a plot formed by hexagonal tessellation of bivariate data points. For example, we could be looking at a dataset containing observations of drug treatment dosages, and enzymatic rates, both recorded as continuous data. Perhaps we could hope to identify the ideal dose by comparing our suspected effect on a target enzyme. 
 
