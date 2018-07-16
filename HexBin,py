@@ -39,6 +39,6 @@ if __name__ == '__main__':
     x_min = input("X Min")
     x_max = input("X Max")
     y_min = input("Y Min")
-    y_max = input("X Max")
+    y_max = input("Y Max")
     axes = [x_min, x_max, y_min, y_max]
     hexBinning(df,x_col, y_col, axes)
