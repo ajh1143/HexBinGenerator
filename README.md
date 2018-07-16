@@ -110,7 +110,7 @@ def hexBinning(df, x, y):
     plt.show()
 
 ```
-<img src="/Images/Hex/GridHexPlot.png" class="inline"/><br>
+<img src="https://github.com/ajh1143/ajh1143.github.io/blob/master/Images/Hex/GridHexPlot.png" class="inline"/><br>
 
 ## Choosing a new Color Map
 
@@ -136,7 +136,7 @@ def hexBinning(df, x, y):
     plt.show()
 
 ```
-<img src="/Images/Hex/InfernoHexPlot.png" class="inline"/><br>
+<img src="https://github.com/ajh1143/ajh1143.github.io/blob/master/Images/Hex/InfernoHexPlot.png" class="inline"/><br>
 
 ## Specifying Extents
 
@@ -162,7 +162,7 @@ def hexBinning(df, x, y, ext):
     plt.show()
 
 ```
-<img src="/Images/Hex/ExtHexPlot.png" class="inline"/><br>
+<img src="https://github.com/ajh1143/ajh1143.github.io/blob/master/Images/Hex/ExtHexPlot.png" class="inline"/><br>
 
 ## Run It
 
