@@ -167,13 +167,16 @@ def hexBinning(df, x, y, ext):
 if __name__ == '__main__':
     #pass file location/name
     file1 = input("File")
-    df = get_data((file1))
-    x_col = input("X Column Name") 
+    df = get_data(file1)
+    x_col = input("X Column Name")
     y_col = input("Y Column Name")
-    x_min = input("X Min")
-    x_max = input("X Max")
-    y_min = input("Y Min")
-    y_max = input("X Max")
+    x_min = int(input("X Min"))
+    x_max = int(input("X Max"))
+    y_min = int(input("Y Min"))
+    y_max = int(input("Y Max"))
     axes = [x_min, x_max, y_min, y_max]
-    hexBinning(df,x_col, y_col, axes)
+    hexBinning(df, x_col, y_col, axes)
+   
+   #Data File used for Example 
+   #https://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data
 ```
