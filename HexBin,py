@@ -10,7 +10,7 @@ def get_data(file):
     df1 = pd.concat(df, ignore_index=True)
     return df
 
-def hexBinning(df, x, y, ext):
+def hexBinning(df, x, y, ext, c_map):
     """
     :param df: dataframe with target data
     :param x: name of x feature
@@ -20,7 +20,7 @@ def hexBinning(df, x, y, ext):
     """
     #Build Hexbin
     # Define your gridsize(x,y) for each plot and add to parameters in plt.hexbin()
-    plt.hexbin(df[x], df[y], cmap='inferno', extent=((ext[0], ext[1], ext[2], ext[3])))
+    plt.hexbin(df[x], df[y], cmap=c_map, extent=((ext[0], ext[1], ext[2], ext[3])))
     # Title, Axes
     plt.title('Hex Plot')
     plt.xlabel(str(x))
@@ -40,5 +40,6 @@ if __name__ == '__main__':
     x_max = input("X Max")
     y_min = input("Y Min")
     y_max = input("Y Max")
+    cmap  = input("Color Palette")
     axes = [x_min, x_max, y_min, y_max]
-    hexBinning(df,x_col, y_col, axes)
+    hexBinning(df,x_col, y_col, axes, cmap)
